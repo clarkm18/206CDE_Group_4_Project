@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MapPrototype</string>
+    <string name="title_activity_maps">Map</string>
+    <color name="white">#FFFFFF</color>
+    <string-array name="titles">
+        <item>Nearby Event</item>
+        <item>Littering</item>
+        <item>Broken Lights</item>
+        <item>Potholes</item>
+        <item>Damaged Pavement</item>
+        <item>Place Of Interest</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="types">
+        <item>Nearby Event</item>
+        <item>Littering</item>
+        <item>Broken Lights</item>
+        <item>Potholes</item>
+        <item>Damaged Pavement</item>
+        <item>Other</item>
+        <item>Place Of Interest</item>
+        <item>Show All</item>
+    </string-array>
+    <string-array name="mapTypes">
+        <item>Default</item>
+        <item>Satellite</item>
+        <item>Hybrid</item>
+    </string-array>
+</resources>
