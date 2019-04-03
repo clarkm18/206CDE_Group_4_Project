@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "739261591508",
+    "firebase_url": "https://real-world-project-map-test.firebaseio.com",
+    "project_id": "real-world-project-map-test",
+    "storage_bucket": "real-world-project-map-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739261591508:android:47329873d7ae4235",
+        "android_client_info": {
+          "package_name": "com.example.mapprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739261591508-j7gk9i8jao66guvbfctrkvmnh5n6kebf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhbUDGO48muXyRE9GhY4XIwTK-ld3fgv0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
