@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PermissionsActivity"
+    tools:showIn="@layout/activity_permissions">
+
+    <ImageView
+        android:id="@+id/imageViewPermissions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/identity"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Identity"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPermissions" />
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Contacts"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identity" />
+
+    <Button
+        android:id="@+id/location"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Location"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacts" />
+
+    <Button
+        android:id="@+id/photos"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Photos"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Camera"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photos" />
+
+    <Button
+        android:id="@+id/fingerprints"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Fingerprints"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera" />
+
+    <TextView
+        android:id="@+id/textViewPermissions"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="Permissions"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchIdentity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/identity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPermissions" />
+
+    <Switch
+        android:id="@+id/switchContacts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/identity"
+        app:layout_constraintTop_toBottomOf="@+id/switchIdentity" />
+
+    <Switch
+        android:id="@+id/switchLocation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/identity"
+        app:layout_constraintTop_toBottomOf="@+id/switchContacts" />
+
+    <Switch
+        android:id="@+id/switchPhotos"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/identity"
+        app:layout_constraintTop_toBottomOf="@+id/switchLocation" />
+
+    <Switch
+        android:id="@+id/switchCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/identity"
+        app:layout_constraintTop_toBottomOf="@+id/switchPhotos" />
+
+    <Switch
+        android:id="@+id/switchFingerprints"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/identity"
+        app:layout_constraintTop_toBottomOf="@+id/switchCamera" />
+</android.support.constraint.ConstraintLayout>

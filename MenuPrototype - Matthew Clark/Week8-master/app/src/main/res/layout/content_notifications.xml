@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NotificationsActivity"
+    tools:showIn="@layout/activity_notifications">
+
+    <ImageView
+        android:id="@+id/imageViewNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <Button
+        android:id="@+id/blockNotifcations"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Block Notifications"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNotifications" />
+
+    <Button
+        android:id="@+id/unblockNotifcations"
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/sample"
+        android:text="Unblock Notifications"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blockNotifcations" />
+
+    <TextView
+        android:id="@+id/textViewNotifications"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="Notifications"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/fjord_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
