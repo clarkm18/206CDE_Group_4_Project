@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="401dp"
+        android:layout_height="181dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/streetview"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="mail"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/userprofile"
+        android:layout_width="152dp"
+        android:layout_height="133dp"
+        android:layout_marginEnd="128dp"
+        android:contentDescription="@null"
+        android:src="@drawable/profilepic2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="182dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="100dp"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:text="@string/your_string_name"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/banner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/report"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="0.6dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_report_problem_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/friends"
+        app:layout_constraintEnd_toStartOf="@+id/friends"
+        app:layout_constraintTop_toTopOf="@id/location"
+        app:layout_constraintVertical_bias="1" />
+
+    <ImageView
+        android:id="@+id/reportProblem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="250dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:src="@drawable/ic_warning_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/friends"
+        app:layout_constraintStart_toEndOf="@+id/friends"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@id/mail" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="0.6dp"
+        android:contentDescription="@null"
+
+        android:src="@drawable/ic_location_on_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/report"
+        app:layout_constraintRight_toRightOf="@id/reportHistory"
+        app:layout_constraintStart_toEndOf="@id/location" />
+
+    <ImageView
+        android:id="@+id/warning"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_report_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <ImageView
+        android:id="@+id/reportHistory"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_history_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/location"
+        app:layout_constraintEnd_toStartOf="@+id/location" />
+
+    <ImageView
+        android:id="@+id/friends"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="0.6dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_people_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/mail"
+        app:layout_constraintEnd_toStartOf="@+id/mail"
+        app:layout_constraintTop_toTopOf=""
+        app:layout_constraintVertical_bias="1" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_mail_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/warning"
+        app:layout_constraintEnd_toStartOf="@+id/warning" />
+</android.support.constraint.ConstraintLayout>
